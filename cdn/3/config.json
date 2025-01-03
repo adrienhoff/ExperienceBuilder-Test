@@ -175,7 +175,8 @@
     "layout_4": {
       "type": "FIXED",
       "order": [
-        "0"
+        "0",
+        "1"
       ],
       "content": {
         "0": {
@@ -198,6 +199,28 @@
               "width": "CUSTOM",
               "height": "AUTO"
             }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_25",
+          "bbox": {
+            "left": "1.2%",
+            "right": "67.5%",
+            "top": "42.4%",
+            "bottom": "2.7%",
+            "width": "31.3%",
+            "height": "54.9%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
           }
         }
       },
@@ -1332,6 +1355,27 @@
       "useMapWidgetIds": [
         "widget_6"
       ]
+    },
+    "widget_25": {
+      "uri": "widgets/draw-custom/",
+      "version": "1.4.0",
+      "label": "draw-custom 2",
+      "config": {
+        "creationMode": "continuous"
+      },
+      "id": "widget_25",
+      "useMapWidgetIds": [
+        "widget_6"
+      ],
+      "style": {
+        "background": {
+          "color": "var(--light-600)",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        }
+      }
     }
   },
   "exbVersion": "1.15.0",
@@ -1360,7 +1404,7 @@
       "home": []
     }
   ],
-  "timestamp": 1735931673572,
+  "timestamp": 1735932365084,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -1382,12 +1426,12 @@
   "attributes": {
     "portalUrl": "https://hoffmaps.maps.arcgis.com",
     "isWebTier": false,
-    "clientId": "3lKB6z9pR6iBCnva",
-    "title": "Untitled experience 1",
+    "clientId": "",
+    "title": "Editing Widgets",
     "description": "",
     "type": "Web Experience",
     "thumbnail": null
   },
   "sharedThemeVariables": null,
-  "publishTimestamp": 1735931688064
+  "publishTimestamp": 1735932366418
 }
