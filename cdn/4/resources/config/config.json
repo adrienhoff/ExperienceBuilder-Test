@@ -175,8 +175,7 @@
     "layout_4": {
       "type": "FIXED",
       "order": [
-        "0",
-        "1"
+        "0"
       ],
       "content": {
         "0": {
@@ -199,28 +198,6 @@
               "width": "CUSTOM",
               "height": "AUTO"
             }
-          }
-        },
-        "1": {
-          "type": "WIDGET",
-          "widgetId": "widget_25",
-          "bbox": {
-            "left": "1.2%",
-            "right": "67.5%",
-            "top": "42.4%",
-            "bottom": "2.7%",
-            "width": "31.3%",
-            "height": "54.9%"
-          },
-          "setting": {
-            "autoProps": {
-              "left": false,
-              "right": true,
-              "top": true,
-              "bottom": false
-            },
-            "vCenter": false,
-            "hCenter": false
           }
         }
       },
@@ -896,6 +873,7 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><strong style=\"font-size: 30px; color: rgb(255, 255, 255);\">Example Use</strong></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>",
+        "placeholder": "<p><span style=\"font-size: 24px; color: rgb(255, 255, 255);\">Title</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -1355,27 +1333,6 @@
       "useMapWidgetIds": [
         "widget_6"
       ]
-    },
-    "widget_25": {
-      "uri": "widgets/draw-custom/",
-      "version": "1.4.0",
-      "label": "draw-custom 2",
-      "config": {
-        "creationMode": "continuous"
-      },
-      "id": "widget_25",
-      "useMapWidgetIds": [
-        "widget_6"
-      ],
-      "style": {
-        "background": {
-          "color": "var(--light-600)",
-          "fillType": "fill",
-          "image": {
-            "url": ""
-          }
-        }
-      }
     }
   },
   "exbVersion": "1.15.0",
@@ -1404,7 +1361,7 @@
       "home": []
     }
   ],
-  "timestamp": 1735932365084,
+  "timestamp": 1735932760892,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -1424,14 +1381,7 @@
     }
   },
   "attributes": {
-    "portalUrl": "https://hoffmaps.maps.arcgis.com",
-    "isWebTier": false,
-    "clientId": "",
-    "title": "Editing Widgets",
-    "description": "",
-    "type": "Web Experience",
-    "thumbnail": null
+    "portalUrl": "https://hoffmaps.maps.arcgis.com"
   },
-  "sharedThemeVariables": null,
-  "publishTimestamp": 1735932366418
+  "sharedThemeVariables": null
 }
