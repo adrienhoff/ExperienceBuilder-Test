@@ -1317,7 +1317,10 @@
       "config": {
         "creationMode": "continuous"
       },
-      "id": "widget_23"
+      "id": "widget_23",
+      "useMapWidgetIds": [
+        "widget_6"
+      ]
     },
     "widget_24": {
       "uri": "widgets/Editor/",
@@ -1336,7 +1339,7 @@
   "mainSizeMode": "LARGE",
   "theme": "themes/default/",
   "forBuilderAttributes": {
-    "lockLayout": true
+    "lockLayout": false
   },
   "template": "foldable",
   "widgetsManifest": {},
@@ -1358,7 +1361,7 @@
       "home": []
     }
   ],
-  "timestamp": 1735924843254,
+  "timestamp": 1735931673572,
   "header": {
     "layout": {
       "LARGE": "layout_15"

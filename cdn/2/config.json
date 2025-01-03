@@ -1316,7 +1316,10 @@
       "config": {
         "creationMode": "continuous"
       },
-      "id": "widget_23"
+      "id": "widget_23",
+      "useMapWidgetIds": [
+        "widget_6"
+      ]
     },
     "widget_24": {
       "uri": "widgets/Editor/",
@@ -1335,7 +1338,7 @@
   "mainSizeMode": "LARGE",
   "theme": "themes/default/",
   "forBuilderAttributes": {
-    "lockLayout": true
+    "lockLayout": false
   },
   "template": "foldable",
   "widgetsManifest": {},
@@ -1357,7 +1360,7 @@
       "home": []
     }
   ],
-  "timestamp": 1735924843254,
+  "timestamp": 1735931673572,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -1378,13 +1381,13 @@
   },
   "attributes": {
     "portalUrl": "https://hoffmaps.maps.arcgis.com",
-    "clientId": "3lKB6z9pR6iBCnva",
     "isWebTier": false,
+    "clientId": "3lKB6z9pR6iBCnva",
     "title": "Untitled experience 1",
     "description": "",
     "type": "Web Experience",
     "thumbnail": null
   },
   "sharedThemeVariables": null,
-  "publishTimestamp": 1735924956483
+  "publishTimestamp": 1735931688064
 }
