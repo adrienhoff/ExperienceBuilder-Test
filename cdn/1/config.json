@@ -1378,10 +1378,8 @@
   },
   "attributes": {
     "portalUrl": "https://hoffmaps.maps.arcgis.com",
-    "appID": "8106d49ea00b45199e72f2a12952d310",
     "clientId": "3lKB6z9pR6iBCnva",
     "isWebTier": false,
-    "clientId": "",
     "title": "Untitled experience 1",
     "description": "",
     "type": "Web Experience",
