@@ -140,9 +140,10 @@
       "type": "FIXED",
       "order": [
         "0",
+        "4",
         "1",
         "2",
-        "3"
+        "5"
       ],
       "content": {
         "0": {
@@ -160,9 +161,14 @@
           "widgetId": "widget_23",
           "bbox": {}
         },
-        "3": {
+        "4": {
           "type": "WIDGET",
-          "widgetId": "widget_24",
+          "widgetId": "widget_25",
+          "bbox": {}
+        },
+        "5": {
+          "type": "WIDGET",
+          "widgetId": "widget_26",
           "bbox": {}
         }
       },
@@ -245,15 +251,16 @@
               "width": "STRETCH",
               "height": "STRETCH"
             },
-            "hCenter": false
+            "hCenter": false,
+            "vCenter": false
           },
           "bbox": {
-            "left": "0%",
-            "right": "0%",
-            "top": "70.00px",
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "70px",
             "bottom": "0.0%",
-            "width": "100%",
-            "height": "92.00%"
+            "width": "100.0%",
+            "height": "91.2%"
           },
           "widgetId": "widget_6"
         }
@@ -960,12 +967,17 @@
         "toolConfig": {
           "canZoom": true,
           "canHome": true,
-          "canSearch": false
+          "canSearch": false,
+          "canSelect": true,
+          "canSelectState": true
         },
         "isUseCustomMapState": false,
         "initialMapState": null,
         "layoutIndex": 0,
-        "initialMapDataSourceID": "dataSource_1"
+        "initialMapDataSourceID": "dataSource_1",
+        "disablePopUp": false,
+        "showPopupUponSelection": false,
+        "popupDockPosition": ""
       },
       "layouts": {
         "MapFixedLayout": {
@@ -1322,14 +1334,26 @@
         "widget_6"
       ]
     },
-    "widget_24": {
+    "widget_25": {
+      "uri": "widgets/Sketch/",
+      "version": "1.15.0",
+      "config": {
+        "exampleConfigProperty": "test",
+        "filterField": ""
+      },
+      "id": "widget_25",
+      "useMapWidgetIds": [
+        "widget_6"
+      ]
+    },
+    "widget_26": {
       "uri": "widgets/Editor/",
       "version": "1.15.0",
       "config": {
         "exampleConfigProperty": "test",
         "filterField": ""
       },
-      "id": "widget_24",
+      "id": "widget_26",
       "useMapWidgetIds": [
         "widget_6"
       ]
@@ -1361,7 +1385,7 @@
       "home": []
     }
   ],
-  "timestamp": 1735932760892,
+  "timestamp": 1736216402326,
   "header": {
     "layout": {
       "LARGE": "layout_15"
