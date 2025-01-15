@@ -139,11 +139,10 @@
     "layout_2": {
       "type": "FIXED",
       "order": [
-        "0",
-        "4",
-        "1",
         "2",
-        "5"
+        "4",
+        "0",
+        "1"
       ],
       "content": {
         "0": {
@@ -164,11 +163,6 @@
         "4": {
           "type": "WIDGET",
           "widgetId": "widget_25",
-          "bbox": {}
-        },
-        "5": {
-          "type": "WIDGET",
-          "widgetId": "widget_26",
           "bbox": {}
         }
       },
@@ -1344,18 +1338,6 @@
       "useMapWidgetIds": [
         "widget_6"
       ]
-    },
-    "widget_26": {
-      "uri": "widgets/Editor/",
-      "version": "1.15.0",
-      "config": {
-        "exampleConfigProperty": "test",
-        "filterField": ""
-      },
-      "id": "widget_26",
-      "useMapWidgetIds": [
-        "widget_6"
-      ]
     }
   },
   "exbVersion": "1.15.0",
@@ -1384,7 +1366,7 @@
       "home": []
     }
   ],
-  "timestamp": 1736216402326,
+  "timestamp": 1736886124302,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -1413,5 +1395,5 @@
     "thumbnail": null
   },
   "sharedThemeVariables": null,
-  "publishTimestamp": 1736873313935
+  "publishTimestamp": 1736886126219
 }
