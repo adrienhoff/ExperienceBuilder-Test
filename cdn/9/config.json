@@ -139,6 +139,7 @@
     "layout_2": {
       "type": "FIXED",
       "order": [
+        "5",
         "2",
         "4",
         "0",
@@ -163,6 +164,11 @@
         "4": {
           "type": "WIDGET",
           "widgetId": "widget_25",
+          "bbox": {}
+        },
+        "5": {
+          "type": "WIDGET",
+          "widgetId": "widget_26",
           "bbox": {}
         }
       },
@@ -1338,6 +1344,176 @@
       "useMapWidgetIds": [
         "widget_6"
       ]
+    },
+    "widget_26": {
+      "uri": "widgets/common/edit/",
+      "version": "1.15.0",
+      "label": "Edit",
+      "config": {
+        "layersConfig": [
+          {
+            "id": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
+            "name": "National FireGuard Service",
+            "layerId": "194470e737e-layer-13",
+            "useDataSource": {
+              "dataSourceId": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
+              "mainDataSourceId": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
+              "rootDataSourceId": "dataSource_1"
+            },
+            "addRecords": true,
+            "deleteRecords": true,
+            "updateRecords": true,
+            "updateAttributes": true,
+            "updateGeometries": true,
+            "featureSnapping": false,
+            "showFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "Shape__Area",
+                "name": "Shape__Area",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Area",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "Shape__Length",
+                "name": "Shape__Length",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Length",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                }
+              },
+              {
+                "jimuName": "Test1",
+                "name": "Test1",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Test1",
+                "format": null
+              },
+              {
+                "jimuName": "Test2",
+                "name": "Test2",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Test2",
+                "format": null
+              }
+            ],
+            "groupedFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": false,
+                "subDescription": "",
+                "editable": false
+              },
+              {
+                "jimuName": "Shape__Area",
+                "name": "Shape__Area",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Area",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "editAuthority": false,
+                "subDescription": "",
+                "editable": false
+              },
+              {
+                "jimuName": "Shape__Length",
+                "name": "Shape__Length",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "Shape__Length",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "editAuthority": false,
+                "subDescription": "",
+                "editable": false
+              },
+              {
+                "jimuName": "Test1",
+                "name": "Test1",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Test1",
+                "format": null,
+                "editAuthority": true,
+                "subDescription": "",
+                "editable": true
+              },
+              {
+                "jimuName": "Test2",
+                "name": "Test2",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Test2",
+                "format": null,
+                "editAuthority": true,
+                "subDescription": "",
+                "editable": true
+              }
+            ],
+            "layerHonorMode": "WEBMAP"
+          }
+        ],
+        "editMode": "GEOMETRY",
+        "selfSnapping": false,
+        "featureSnapping": false,
+        "defaultSelfEnabled": false,
+        "defaultFeatureEnabled": false,
+        "defaultSnapLayers": [
+          "dataSource_1-1942d2e2609-layer-123",
+          "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13"
+        ],
+        "tooltip": true,
+        "templateFilter": true,
+        "liveDataEditing": false,
+        "relatedRecords": true,
+        "description": "",
+        "noDataMessage": "",
+        "snapSettingMode": "FLEXIBLE"
+      },
+      "id": "widget_26",
+      "useMapWidgetIds": [
+        "widget_6"
+      ],
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
+          "mainDataSourceId": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ]
     }
   },
   "exbVersion": "1.15.0",
@@ -1366,7 +1542,7 @@
       "home": []
     }
   ],
-  "timestamp": 1736886124302,
+  "timestamp": 1736965467896,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -1395,5 +1571,5 @@
     "thumbnail": null
   },
   "sharedThemeVariables": null,
-  "publishTimestamp": 1736886126219
+  "publishTimestamp": 1738078361587
 }
