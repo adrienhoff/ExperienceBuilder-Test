@@ -139,7 +139,6 @@
     "layout_2": {
       "type": "FIXED",
       "order": [
-        "5",
         "2",
         "4",
         "0",
@@ -165,11 +164,6 @@
           "type": "WIDGET",
           "widgetId": "widget_25",
           "bbox": {}
-        },
-        "5": {
-          "type": "WIDGET",
-          "widgetId": "widget_26",
-          "bbox": {}
         }
       },
       "label": "Controller layout"
@@ -187,12 +181,12 @@
         "0": {
           "type": "WIDGET",
           "bbox": {
-            "left": "70.00px",
-            "right": "1.00%",
-            "top": "16.00px",
-            "bottom": "82.7%",
-            "width": "400.00px",
-            "height": "4.6%"
+            "left": "65px",
+            "right": "63.6%",
+            "top": "16px",
+            "bottom": "93.3%",
+            "width": "400px",
+            "height": "4.5%"
           },
           "widgetId": "widget_22",
           "setting": {
@@ -203,7 +197,9 @@
               "bottom": true,
               "width": "CUSTOM",
               "height": "AUTO"
-            }
+            },
+            "vCenter": false,
+            "hCenter": false
           }
         }
       },
@@ -880,7 +876,6 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><strong style=\"font-size: 30px; color: rgb(255, 255, 255);\">Example Use</strong></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>",
-        "placeholder": "<p><span style=\"font-size: 24px; color: rgb(255, 255, 255);\">Title</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -968,8 +963,8 @@
           "canZoom": true,
           "canHome": true,
           "canSearch": false,
-          "canSelect": true,
-          "canSelectState": true
+          "canSelect": false,
+          "canSelectState": false
         },
         "isUseCustomMapState": false,
         "initialMapState": null,
@@ -1332,7 +1327,8 @@
       "id": "widget_23",
       "useMapWidgetIds": [
         "widget_6"
-      ]
+      ],
+      "label": "Custom Draw"
     },
     "widget_25": {
       "uri": "widgets/Sketch/",
@@ -1344,177 +1340,23 @@
       "id": "widget_25",
       "useMapWidgetIds": [
         "widget_6"
-      ]
-    },
-    "widget_26": {
-      "uri": "widgets/common/edit/",
-      "version": "1.15.0",
-      "label": "Edit",
-      "config": {
-        "layersConfig": [
-          {
-            "id": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
-            "name": "National FireGuard Service",
-            "layerId": "194470e737e-layer-13",
-            "useDataSource": {
-              "dataSourceId": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
-              "mainDataSourceId": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
-              "rootDataSourceId": "dataSource_1"
-            },
-            "addRecords": true,
-            "deleteRecords": true,
-            "updateRecords": true,
-            "updateAttributes": true,
-            "updateGeometries": true,
-            "featureSnapping": false,
-            "showFields": [
-              {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "OBJECTID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "Shape__Area",
-                "name": "Shape__Area",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Area",
-                "format": {
-                  "digitSeparator": true,
-                  "places": 2
-                }
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "format": {
-                  "digitSeparator": true,
-                  "places": 2
-                }
-              },
-              {
-                "jimuName": "Test1",
-                "name": "Test1",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Test1",
-                "format": null
-              },
-              {
-                "jimuName": "Test2",
-                "name": "Test2",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Test2",
-                "format": null
-              }
-            ],
-            "groupedFields": [
-              {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "OBJECTID",
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": false,
-                "subDescription": "",
-                "editable": false
-              },
-              {
-                "jimuName": "Shape__Area",
-                "name": "Shape__Area",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Area",
-                "format": {
-                  "digitSeparator": true,
-                  "places": 2
-                },
-                "editAuthority": false,
-                "subDescription": "",
-                "editable": false
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "format": {
-                  "digitSeparator": true,
-                  "places": 2
-                },
-                "editAuthority": false,
-                "subDescription": "",
-                "editable": false
-              },
-              {
-                "jimuName": "Test1",
-                "name": "Test1",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Test1",
-                "format": null,
-                "editAuthority": true,
-                "subDescription": "",
-                "editable": true
-              },
-              {
-                "jimuName": "Test2",
-                "name": "Test2",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Test2",
-                "format": null,
-                "editAuthority": true,
-                "subDescription": "",
-                "editable": true
-              }
-            ],
-            "layerHonorMode": "WEBMAP"
-          }
-        ],
-        "editMode": "GEOMETRY",
-        "selfSnapping": false,
-        "featureSnapping": false,
-        "defaultSelfEnabled": false,
-        "defaultFeatureEnabled": false,
-        "defaultSnapLayers": [
-          "dataSource_1-1942d2e2609-layer-123",
-          "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13"
-        ],
-        "tooltip": true,
-        "templateFilter": true,
-        "liveDataEditing": false,
-        "relatedRecords": true,
-        "description": "",
-        "noDataMessage": "",
-        "snapSettingMode": "FLEXIBLE"
-      },
-      "id": "widget_26",
-      "useMapWidgetIds": [
-        "widget_6"
       ],
-      "useDataSources": [
-        {
-          "dataSourceId": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
-          "mainDataSourceId": "dataSource_1-1942d2e2609-layer-123-194470e737e-layer-13",
-          "rootDataSourceId": "dataSource_1"
+      "icon": {
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M11.227 1.312c-.404-.404-1.045-.417-1.432-.03L2.49 8.587l-.48 2.674a.637.637 0 0 0 .73.73l2.673-.48 7.305-7.306c.387-.387.374-1.028-.03-1.431zm-8.114 9.575.32-1.781 4.991-4.992 1.462 1.462-4.992 4.991zm7.473-6.012 1.402-1.4-1.462-1.463-1.401 1.402z\" clip-rule=\"evenodd\"></path><path fill=\"#000\" d=\"M1.5 14a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1z\"></path></svg>",
+        "properties": {
+          "filename": "EditOutlined",
+          "originalName": "outlined/editor/edit.svg",
+          "path": [
+            "editor",
+            "EditOutlined"
+          ],
+          "color": "#ffffff",
+          "size": 16,
+          "inlineSvg": true,
+          "isUploaded": false
         }
-      ]
+      },
+      "label": "Custom Editor"
     }
   },
   "exbVersion": "1.15.0",
@@ -1543,7 +1385,7 @@
       "home": []
     }
   ],
-  "timestamp": 1736965467896,
+  "timestamp": 1738359393961,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -1563,7 +1405,14 @@
     }
   },
   "attributes": {
-    "portalUrl": "https://hoffmaps.maps.arcgis.com"
+    "portalUrl": "https://hoffmaps.maps.arcgis.com",
+    "isWebTier": false,
+    "clientId": "",
+    "title": "Editing Widgets",
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": null
   },
-  "sharedThemeVariables": null
+  "sharedThemeVariables": null,
+  "publishTimestamp": 1738359395458
 }
