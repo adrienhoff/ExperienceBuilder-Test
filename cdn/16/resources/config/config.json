@@ -54,7 +54,6 @@
       "order": [
         "0",
         "1",
-        "2",
         "3"
       ],
       "content": {
@@ -94,25 +93,6 @@
             }
           }
         },
-        "2": {
-          "type": "WIDGET",
-          "bbox": {
-            "left": "360.00px",
-            "top": "50%",
-            "width": "400.00px",
-            "height": "32px",
-            "bottom": "0px"
-          },
-          "isPending": false,
-          "setting": {
-            "vCenter": true,
-            "hCenter": false,
-            "autoProps": {
-              "top": false,
-              "bottom": true
-            }
-          }
-        },
         "3": {
           "type": "WIDGET",
           "bbox": {
@@ -142,7 +122,8 @@
         "2",
         "4",
         "0",
-        "1"
+        "1",
+        "5"
       ],
       "content": {
         "0": {
@@ -164,6 +145,11 @@
           "type": "WIDGET",
           "widgetId": "widget_25",
           "bbox": {}
+        },
+        "5": {
+          "type": "WIDGET",
+          "widgetId": "widget_26",
+          "bbox": {}
         }
       },
       "label": "Controller layout"
@@ -175,7 +161,8 @@
     "layout_4": {
       "type": "FIXED",
       "order": [
-        "0"
+        "0",
+        "1"
       ],
       "content": {
         "0": {
@@ -197,6 +184,28 @@
               "bottom": true,
               "width": "CUSTOM",
               "height": "AUTO"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_27",
+          "bbox": {
+            "left": "1.0%",
+            "right": "75.4%",
+            "top": "81.1%",
+            "bottom": "4.9%",
+            "width": "23.6%",
+            "height": "14.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
             },
             "vCenter": false,
             "hCenter": false
@@ -876,6 +885,7 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><strong style=\"font-size: 30px; color: rgb(255, 255, 255);\">Example Use</strong></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>",
+        "placeholder": "<p><span style=\"font-size: 24px; color: rgb(255, 255, 255);\">Title</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -1357,6 +1367,37 @@
         }
       },
       "label": "Custom Editor"
+    },
+    "widget_26": {
+      "uri": "widgets/arcgis/basemap-gallery/",
+      "version": "1.15.0",
+      "label": "Basemap Gallery",
+      "config": {
+        "basemapsType": "ORGANIZATION",
+        "customBasemaps": []
+      },
+      "id": "widget_26",
+      "useMapWidgetIds": [
+        "widget_6"
+      ]
+    },
+    "widget_27": {
+      "uri": "widgets/zoom/",
+      "version": "1.15.0",
+      "config": {
+        "exampleConfigProperty": "test",
+        "filterField": ""
+      },
+      "id": "widget_27",
+      "useMapWidgetIds": [
+        "widget_6"
+      ],
+      "style": {
+        "background": {
+          "color": "var(--light-100)",
+          "fillType": "fill"
+        }
+      }
     }
   },
   "exbVersion": "1.15.0",
@@ -1385,7 +1426,7 @@
       "home": []
     }
   ],
-  "timestamp": 1738359393961,
+  "timestamp": 1739558230262,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -1405,14 +1446,7 @@
     }
   },
   "attributes": {
-    "portalUrl": "https://hoffmaps.maps.arcgis.com",
-    "isWebTier": false,
-    "clientId": "",
-    "title": "Editing Widgets",
-    "description": "",
-    "type": "Web Experience",
-    "thumbnail": null
+    "portalUrl": "https://hoffmaps.maps.arcgis.com"
   },
-  "sharedThemeVariables": null,
-  "publishTimestamp": 1738359395458
+  "sharedThemeVariables": null
 }
