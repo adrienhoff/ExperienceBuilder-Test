@@ -121,6 +121,7 @@
       "order": [
         "2",
         "4",
+        "7",
         "0",
         "1",
         "5"
@@ -150,6 +151,11 @@
           "type": "WIDGET",
           "widgetId": "widget_26",
           "bbox": {}
+        },
+        "7": {
+          "type": "WIDGET",
+          "widgetId": "widget_27",
+          "bbox": {}
         }
       },
       "label": "Controller layout"
@@ -161,8 +167,7 @@
     "layout_4": {
       "type": "FIXED",
       "order": [
-        "0",
-        "1"
+        "0"
       ],
       "content": {
         "0": {
@@ -184,28 +189,6 @@
               "bottom": true,
               "width": "CUSTOM",
               "height": "AUTO"
-            },
-            "vCenter": false,
-            "hCenter": false
-          }
-        },
-        "1": {
-          "type": "WIDGET",
-          "widgetId": "widget_27",
-          "bbox": {
-            "left": "1.0%",
-            "right": "75.4%",
-            "top": "81.1%",
-            "bottom": "4.9%",
-            "width": "23.6%",
-            "height": "14.0%"
-          },
-          "setting": {
-            "autoProps": {
-              "left": false,
-              "right": true,
-              "top": true,
-              "bottom": false
             },
             "vCenter": false,
             "hCenter": false
@@ -885,7 +868,6 @@
       "uri": "widgets/common/text/",
       "config": {
         "text": "<p><strong style=\"font-size: 30px; color: rgb(255, 255, 255);\">Example Use</strong></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>",
-        "placeholder": "<p><span style=\"font-size: 24px; color: rgb(255, 255, 255);\">Title</span></p>",
         "style": {
           "verticalAlign": "center",
           "wrap": true,
@@ -904,8 +886,21 @@
           "onlyOpenOne": true,
           "displayType": "STACK",
           "vertical": false,
-          "size": {},
-          "arrangement": "fixed"
+          "size": {
+            "widget_23": {
+              "width": 308,
+              "height": 377
+            },
+            "widget_25": {
+              "width": 369,
+              "height": 599
+            },
+            "widget_27": {
+              "width": 338,
+              "height": 215
+            }
+          },
+          "arrangement": "floating"
         },
         "appearance": {
           "space": 0,
@@ -1338,7 +1333,7 @@
       "useMapWidgetIds": [
         "widget_6"
       ],
-      "label": "Custom Draw"
+      "label": "Temp Markers"
     },
     "widget_25": {
       "uri": "widgets/Sketch/",
@@ -1384,6 +1379,22 @@
     "widget_27": {
       "uri": "widgets/zoom/",
       "version": "1.15.0",
+      "icon": {
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M16 5.16V11H9.5v-1h3.1L10 5.153V1H6v2.5H5V0h11zm-1 .794V10h-1.199l-1.164-2.17zm0-1.497V1h-3.98v3.813l1.055 1.968zM7.682 6.318a4.5 4.5 0 1 0-.373 6.698l2.848 2.848.707-.707-2.847-2.848a4.5 4.5 0 0 0-.335-5.991m-5.657 5.657a3.5 3.5 0 1 1 4.95-4.95 3.5 3.5 0 0 1-4.95 4.95\" clip-rule=\"evenodd\"></path></svg>",
+        "properties": {
+          "filename": "SelectZoomToOutlined",
+          "originalName": "outlined/gis/select-zoom-to.svg",
+          "path": [
+            "gis",
+            "SelectZoomToOutlined"
+          ],
+          "color": "#ffffff",
+          "size": 16,
+          "inlineSvg": true,
+          "isUploaded": false
+        }
+      },
+      "label": "Change Extent",
       "config": {
         "exampleConfigProperty": "test",
         "filterField": ""
@@ -1391,13 +1402,7 @@
       "id": "widget_27",
       "useMapWidgetIds": [
         "widget_6"
-      ],
-      "style": {
-        "background": {
-          "color": "var(--light-100)",
-          "fillType": "fill"
-        }
-      }
+      ]
     }
   },
   "exbVersion": "1.15.0",
@@ -1426,7 +1431,7 @@
       "home": []
     }
   ],
-  "timestamp": 1739558230262,
+  "timestamp": 1740167201864,
   "header": {
     "layout": {
       "LARGE": "layout_15"
@@ -1436,17 +1441,16 @@
     }
   },
   "originExbVersion": "1.15.0",
-  "controllerPanels": {
-    "widget_5": {
-      "position": "TOP_RIGHT",
-      "width": "320px",
-      "height": "88%",
-      "offsetX": 0,
-      "offsetY": 80
-    }
-  },
+  "controllerPanels": {},
   "attributes": {
-    "portalUrl": "https://hoffmaps.maps.arcgis.com"
+    "portalUrl": "https://hoffmaps.maps.arcgis.com",
+    "isWebTier": false,
+    "clientId": "",
+    "title": "Editing Widgets",
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": null
   },
-  "sharedThemeVariables": null
+  "sharedThemeVariables": null,
+  "publishTimestamp": 1740167202475
 }
